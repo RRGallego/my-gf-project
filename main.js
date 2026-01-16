@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartSection = document.getElementById('cart');
     const cartContent = document.querySelector('.cart-content');
     const totalItems = document.getElementById('total-items-cart');
+    const cartTotalItems = document.getElementById('cart-total-items');
     const totalPrice = document.getElementById('total-price-cart');
     const checkoutBtn = document.getElementById('checkout-btn');
 
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     
         totalItems.textContent = itemsCount;
+        cartTotalItems.textContent = itemsCount;
         totalPrice.textContent = priceTotal.toFixed(2);
     }
 
@@ -58,7 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Example usage: Add item to cart
     document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
             const item = {
                 id: button.getAttribute('data-id'),
                 name: button.getAttribute('data-name'),
