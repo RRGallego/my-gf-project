@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessa Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/Jessa clothing.png" alt="Jessa Clothing"><span class="logo-text">Jessa Clothing</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="cart-toggle">
+                Cart
+                <span id="total-items-cart">0</span>
+            </a></li>
+            <li>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </li>
+        </ul>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1 class="welcome">Welcome To</h1>
+            <div class="home-logo">
+                <img src="img/Jessa clothing.png" alt="Logo">
+            </div>
+            <h1>Jessa Clothing</h1>
+            <h2>Discover Your Style</h2>
+            <a href="#login" class="btn">Join Now</a>
+        </div>
+        <div class="home-img">
+            <img src="img/dresses.png" alt="Fashion">
+        </div>
+    </section>
+
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Our Collection</span>
+            <h1>Dress Shop</h1>
+        </div>
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/dress1.png" alt="Dress 1">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Ocean Mist Ball Gown</h2>
+                <span>$550</span>
+                <a href="#" class="btn add-to-cart-btn" data-id="1" data-name="Ocean Mist Ball Gown" data-price="550" data-img="img/dress1.png">Add to Cart</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/dress2.png" alt="Dress 2">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Amethyst Royal Gown</h2>
+                <span>$500</span>
+                <a href="#" class="btn add-to-cart-btn" data-id="2" data-name="Amethyst Royal Gown" data-price="500" data-img="img/dress2.png">Add to Cart</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/dress3.png" alt="Dress 3">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Golden Sunrise Gown</h2>
+                <span>$500</span>
+                <a href="#" class="btn add-to-cart-btn" data-id="3" data-name="Golden Sunrise Gown" data-price="500" data-img="img/dress3.png">Add to Cart</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/dress4.png" alt="Dress 4">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Crimson Elegance</h2>
+                <span>$560</span>
+                <a href="#" class="btn add-to-cart-btn" data-id="4" data-name="Crimson Elegance" data-price="560" data-img="img/dress4.png">Add to Cart</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/dress5.png" alt="Dress 5">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <h2>Eternal Grace</h2>
+                <span>$1500</span>
+                <a href="#" class="btn add-to-cart-btn" data-id="5" data-name="Eternal Grace" data-price="1500" data-img="img/dress5.png">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.png" alt="About Us">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Jessa Clothing is dedicated to bringing you the latest in fashion trends...</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <p>&#169; Jessa Clothing All Rights Reserved.</p>
+        <p>Build by: RRGallego</p>
+        <p>Follow us on <a href="https://www.facebook.com/profile.php?id=100073261977038&mibextid=ZbWKwL" target="_blank">Facebook</a></p>
+    </section>    
+
+    <div id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="cart-summary">
+            <p>Total Items: <span id="total-items-cart">0</span></p>
+            <p>Total Price: $<span id="total-price-cart">0.00</span></p>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
